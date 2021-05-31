@@ -1,0 +1,79 @@
+
+.forget-contaner{
+	background-color:white;
+	height: 100vh;
+	padding: 30px;
+}
+
+.forget-box{
+	font-size: .8em;
+	border-radius: 15px;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,.8);
+	background-color: #1e447e;
+/*		1e447e*/
+/*	003486*/
+	color: white;
+	padding: 25px 35px;
+	margin: 20px 30px;
+	text-align: center;
+}
+
+.forget-box form .input-group{
+	margin: 50px 0px;
+}
+.forget-box form .input-group label{
+	display: block;
+	font-size: 1.5em;
+} 
+.forget-box form .input-group input{
+	border: none;
+	background: none;
+	border-radius: 20px;
+	border: 2px solid white;
+	margin-top: 50px;
+	padding: 10px;
+	color: white;
+	width: 50%;
+	outline: none;
+}
+
+.forget-box form .submit-btn{
+	text-align: center;
+}
+.forget-box form .submit-btn input{
+	border-radius: 35px;
+	border: none;
+	background-color: #eb4d4b;
+	color: white;
+	padding: 10px 40px;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline: none;
+}
+
+
+.forget-box .social-auth{
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px solid rgba(255,255,255,.8);
+	margin-top: 30px;
+	padding-top: 20px;
+}
+.forget-box .social-auth a{
+	color: white;
+	font-size: 1.9em;
+}
+.forget-box .social-auth a i{
+	
+}
+
+.forget-img{
+	display: flex;
+	height: 100%;
+}
+
+.forget-img img{
+	width: 100%;
+}
+

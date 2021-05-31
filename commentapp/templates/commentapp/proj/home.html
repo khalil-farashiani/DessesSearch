@@ -1,0 +1,412 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+<title>صفحه اصلی</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<ul>
+							<li><a href="{% url 'sign-up' %}"><i class="fas fa-user-plus"></i>حساب کاربری</a></li>
+						</ul>
+					</div>
+					<div class="header-social col-12 col-md-6">
+						<ul>
+							<li><a src="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a src="#"><i class="fa fa-google"></i></a></li>
+							<li><a src="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a src="#"><i class="fa fa-telegram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="header-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<ul>
+							<li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+							<li><a href="projects.html">نمونه پروژه</a></li>
+							<li><a href="members.html">اعضای تیم</a></li>
+							<li><a href="Articles.html">مقالات</a></li>
+							<li><a href="{% url 'Educational-concepts' %}">مفاهیم آموزشی</a></li>
+							<li><a href="{% url 'tools' %}">Tools</a></li>
+							<li><a href="contactus.html">ارتباط با ما</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="logo"><a href=""><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="clearfix"></div>
+	<div class="slider-section">
+		<div class="carousel slide" id="slider" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slider" data-slide-to="0"  class="active"></li>
+				<li data-target="#slider" data-slide-to="1"></li>
+				<li data-target="#slider" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="{% static 'images/slider1.jpg' %}" alt="">
+					<div class="slider-text">
+						<h3>لورم ایپسوم متن ساختگی با تولید سادگی</h3>
+					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم<br/>از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="{% static 'images/slider2.jpg' %}" alt="">
+					<div class="slider-text">
+						<h3>لورم ایپسوم متن ساختگی با تولید سادگی</h3>
+					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم<br/> از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="{% static 'images/slider3.jpg' %}" alt="">
+					<div class="slider-text">
+						<h3>لورم ایپسوم متن ساختگی با تولید سادگی</h3>
+					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم<br/> از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+					</div>
+				</div>
+			</div>
+			<a href="#slider" class="carousel-control-prev" data-slide="prev" role="button">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#slider" class="carousel-control-next" data-slide="next" role="button">
+				<span class="carousel-control-next-icon"></span>
+			</a> 
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="explain-data">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-8 col-md-8">
+					<div class="title-data text-right">
+						<h2>علوم داده</h2>
+					</div>
+					<p class="text-right">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.هوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که </p>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+						<img src="{% static 'images/data.png' %}" alt="">
+					
+				</div>
+				<div class="clearfix"></div>
+				<div class="button"><a href="data.html" class="all-button">ادامه مطلب</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="sampleproj-section">
+		<div class="title-section">
+			<h2>نمونه پروژه</h2>
+			<!-- <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p> -->
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/1.jpg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه1</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/2.jpg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه2</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/3.jpg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه3</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/4.jpg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه4</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/5.jpg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه5</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="sampleproj-info">
+						<img src="{% static 'images/6.jpeg' %}" alt="">
+						<div class="sampleproj-overlay"></div>
+						<div class="sampleproj-overlay-text">
+							<a href="">
+								<i class="fa fa-user"></i>
+								<h3>پروژه6</h3>
+								<p>لورم ایپسوم متن ساختگی</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Write your comments here -->
+				<div class="clearfix"></div>
+				<div class="button"><a href="#" class="all-button">مشاهده پروژه ها</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="members-section">
+		<div class="members-overlay">
+			<div class="title-section">
+				<h2>اعضای تیم ما</h2>
+				<p>با تیم ما آشنا شوید :) هدف مجموعه...</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="members-info shadow-around">
+							<img src="{% static 'images/p1.jpg' %}" alt="">
+							<div class="members-text">
+								<h3>حسین ابراهیمی</h3>
+								<p>AR game Virus attack</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="members-info shadow-around">
+							<img src="{% static 'images/p2.jpg' %}" alt="">
+							<div class="members-text">
+								<h3>صادق محمدی</h3>
+								<p>Cloud & Cloud services</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="members-info shadow-around">
+							<img src="{% static 'images/p3.jpg' %}" alt="">
+							<div class="members-text">
+								<h3> فهیمه فاتحی</h3>
+								<p>Online shop website</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="button"><a href="#" class="all-button">جزییات</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="articles-section">
+		<div class="title-section">
+			<h2>مقالات</h2>
+			<p>مقالات  در اختیار شماست</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="articles-item shadow-around">
+						<img src="{% static 'images/7.jpg' %}" alt="">
+						<div class="articles-content">
+							<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+							<ul>
+								<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+							</ul>
+							<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						</div>
+						<div class="read-more"><a href="articles.html">ادامه مطلب</a></div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="articles-item shadow-around">
+						<img src="{% static 'images/8.jpg' %}" alt="">
+						<div class="articles-content">
+							<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+							<ul>
+								<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+							</ul>
+							<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						</div>
+						<div class="read-more"><a href="#">ادامه مطلب</a></div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+					<div class="articles-item shadow-around">
+						<img src="{% static 'images/9.webp' %}" alt="">
+						<div class="articles-content">
+							<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+							<ul>
+								<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+							</ul>
+							<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						</div>
+						<div class="read-more"><a href="#">ادامه مطلب</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="education-section">
+		<div class="education-overlay">
+			<div class="title-section">
+				<h2>مطالب اموزشی</h2>
+				<p>مطالب اموزشی در اختیار شماست</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="education-item shadow-around">
+							<img src="{% static 'images/7.jpg' %}" alt="">
+							<div class="education-content">
+								<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+								</ul>
+								<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+							</div>
+							<div class="read-more"><a href="{% url 'Educational-concepts' %}">ادامه مطلب</a></div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="education-item shadow-around">
+							<img src="{% static 'images/8.jpg' %}" alt="">
+							<div class="education-content">
+								<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+								</ul>
+								<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+							</div>
+							<div class="read-more"><a href="#">ادامه مطلب</a></div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="education-item shadow-around">
+							<img src="{% static 'images/9.webp' %}" alt="">
+							<div class="education-content">
+								<h4><a href="">لورم ایپسوم متن ساختگی با تولید سادگی</a></h4>
+								<ul>
+									<li><i class="fa fa-clock-o"></i>25 اردیبهشت 99</li>
+								</ul>
+								<p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+							</div>
+							<div class="read-more"><a href="#">ادامه مطلب</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="contact-section">
+		<div class="title-section text-center">
+			<h2>پیام های شما</h2>
+			<p>نظرات و پیشنهادات خود را با ما در میان بگذارید</p>
+		</div>
+		{% block content %}
+		<form method="post">
+			{% csrf_token %}
+			{{ form }}
+			<input type="submit" value="Submit">
+		</form>
+		{% endblock %}
+	</div>
+	<div class="clearfix"></div>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="right">
+							<h4>درباره ما</h4>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="center">
+							<h4>تماس با ما</h4>
+							<!-- راه های ارتباطی -->
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="left">
+							<h4>دسترسی سریع</h4>
+							<ul>
+								<li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+								<li><a href="projects.html">نمونه پروژه</a></li>
+								<li><a href="members.html">اعضای تیم</a></li>
+								<li><a href="Articles.html">مقالات</a></li>
+								<li><a href="{% url 'Educational-concepts' %}">مفاهیم آموزشی</a></li>
+								<li><a href="{% url 'tools' %}">Tools</a></li>
+								<li><a href="contactus.html">ارتباط با ما</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+	<script src="{% static 'js/server.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@font-face{
+	font-family: sahel;
+	src: url("fonts/Sahel-FD-WOL.eot") format("eot") , url("fonts/Sahel-FD-WOL.ttf") format("truetype") , url("fonts/Sahel-FD-WOL.woff") format("woff")
+}
+
+*{
+	direction: rtl;
+	font-family: sahel;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1rem;
+	line-height: 30px;
+	margin: 0;
+}
+ul,ol{
+	padding: 0; 
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	/* text-decoration: none; */
+	color: #333;
+}
+a,a:hover{
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}

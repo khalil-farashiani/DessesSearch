@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/tools.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+<title>Tools</title>
+</head>
+<body>
+    <header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<ul>
+							<li><a href="{% url 'sign-up' %}"><i class="fas fa-user-plus"></i>حساب کاربری</a></li>
+						</ul>
+					</div>
+					<div class="header-social col-12 col-md-6">
+						<ul>
+							<li><a src="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a src="#"><i class="fa fa-google"></i></a></li>
+							<li><a src="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a src="#"><i class="fa fa-telegram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="header-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-8">
+						<ul>
+							<li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+							<li><a href="projects.html">نمونه پروژه</a></li>
+							<li><a href="members.html">اعضای تیم</a></li>
+							<li><a href="Articles.html">مقالات</a></li>
+							<li><a href="{% url 'Educational-concepts' %}">مفاهیم آموزشی</a></li>
+							<li><a href="{% url 'tools' %}">Tools</a></li>
+							<li><a href="contactus.html">ارتباط با ما</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="logo"><a href=""><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+	<div class="clearfix"></div>
+	<main>
+		<div class="scrap-section">
+			<div class="scrap-overlay">
+				<div class="title-section text-center">
+					<h1>web scraping</h1>
+				</div>
+				<form action="{% url 'search_results' %}" method="get">
+					<input name="q" type="text" placeholder="Search...">
+				</form>
+			</div>
+		</div>
+	</main>
+    <div class="clearfix"></div>
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="right">
+							<h4>درباره ما</h4>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="center">
+							<h4>تماس با ما</h4>
+							<!-- راه های ارتباطی -->
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورملورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-sm-4 col-md-4">
+						<div class="left">
+							<h4>دسترسی سریع</h4>
+							<ul>
+								<li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+								<li><a href="projects.html">نمونه پروژه</a></li>
+								<li><a href="members.html">اعضای تیم</a></li>
+								<li><a href="Articles.html">مقالات</a></li>
+								<li><a href="{% url 'Educational-concepts' %}">مفاهیم آموزشی</a></li>
+								<li><a href="{% url 'tools' %}">Tools</a></li>
+								<li><a href="contactus.html">ارتباط با ما</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+	<script src="{% static 'js/server.js' %}"></script>
+</body>
+</html>
